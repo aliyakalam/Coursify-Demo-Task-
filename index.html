@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <title>Your Recruitment Startup</title>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="task logo.png">
+            <h1>Talanties</h1>
+        </div>
+
+
+
+        <nav>
+            <ul>
+                <li><a href="#Home-section">Home</a></li>
+                <li><a href="#About-section">About Us</a></li>
+                <li><a href="#Service-section">Services</a></li>
+                <li><a href="#Contact-section">Contact Us</a></li>
+            </ul>
+        </nav>
+        <div class="user-auth">
+            <a href="#">Login</a>
+            <a href="#">Register</a>
+        </div>
+    </header>
+
+
+    <section id="Home-section" class="hero">
+
+        <div class="hero-content">
+            <h2>Unlock Top Tech Talent for Your Team</h2>
+            <a href="#" class="cta-button">Get Started</a>
+        </div>
+    </section>
+
+
+    <section class="about-section" id="About-section">
+        <h2>About Our Recruiting Approach</h2>
+        <p>Do you really want to look at thousands of irrelevant job postings or get spammed by job sites? At Talanties,
+            we do the work of finding the best jobs for you, so you can sit back and relax.We help build pipeline, and
+            we help screen candidates for managers. We do it with a delightful interface and AI recruiting assistant who
+            has time to get to all the things managers and recruiters can't.</p>
+
+    </section>
+
+
+    <section class="features bg-light p-5" id="Service-section">
+        <h2 class="text-center">Services </h2>
+
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card text-center p-3">
+
+                    <div class="card-body ">
+                        <h5 class="card-title">Global Talent Pool</h5>
+                        <p class="card-text ">Access a diverse pool of skilled software engineers, data scientists, and
+                            more from around the world.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card text-center p-3">
+
+                    <div class="card-body">
+                        <h5 class="card-title">Customized Hiring Solutions</h5>
+                        <p class="card-text">Tailored recruitment solutions for your specific needs, whether it's
+                            software engineering or data science.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card text-center p-3">
+
+                    <div class="card-body">
+                        <h5 class="card-title">Advanced Screening Process</h5>
+                        <p class="card-text">Utilize our advanced screening process to ensure you're only interviewing
+                            the best-matched candidates.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+    <section class="testimonials">
+
+    </section>
+    <section class="contact-form" id="Contact-section">
+        <h1>Contact Us</h1>
+        <form id="contactForm">
+            <input type="text" id="name" placeholder="Your Name" required>
+            <input type="email" id="email" placeholder="Email Address" required>
+            <textarea id="message" placeholder="Your Message" rows="4" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+
+        <div class="social-icons">
+            <a href="#"><img
+                    src="data:image/png;base64,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"
+                    alt="Facebook"></a>
+            <a href="#"><img
+                    src="data:image/png;base64,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"
+                    alt="Twitter"></a>
+            <a href="#"><img
+                    src="data:image/png;base64,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"
+                    alt="LinkedIn"></a>
+            <p>&copy; 2023 Your Company. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</body>
+
+</html>

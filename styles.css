@@ -1,0 +1,261 @@
+* {
+  box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+h3,
+p,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+/* Header Styles */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px;
+  background-color: #f8f8f8;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logo img {
+  width: 50px;
+  height: auto;
+  height: 9%;
+  width: 15%;
+}
+
+.logo h1 {
+  display: inline;
+  margin-left: 10px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav li {
+  margin-right: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+.user-auth a {
+  margin-left: 20px;
+  color: #333;
+  text-decoration: none;
+}
+
+.hero {
+  background-image: url("cover1.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  z-index: 0;
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 500px;
+}
+body {
+  overflow-x: hidden;
+}
+
+.hero-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+  animation: fadeInFromLeft 1s ease-in-out;
+}
+
+.hero h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+  background-color: #0056b3;
+}
+
+.about-section {
+  background-color: #ccc;
+  background-size: cover;
+  background-position: center;
+  padding: 100px 0; /* Adjust padding as needed */
+  color: #666; /* Set text color for better visibility */
+}
+
+.about-section h2,
+.about-section p {
+  text-align: center;
+}
+.about-section h2 {
+  font-size: 28px;
+  margin-bottom: 15px;
+  color: midnightblue;
+}
+
+.features h2 {
+  font-size: 28px;
+  margin-bottom: 15px;
+  color: midnightblue;
+}
+.card-title {
+  color: darkviolet;
+}
+
+@keyframes fadeInFromBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Footer Styles */
+footer {
+  padding: 20px;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+}
+
+.contact-info a {
+  color: #fff;
+}
+
+.social-icons {
+  margin-top: 10px;
+}
+
+.social-icons a {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.social-icons img {
+  width: 24px;
+  height: auto;
+}
+
+/* Contact Form Styles */
+.contact-form {
+  margin: 50px auto;
+  text-align: center;
+}
+
+.contact-form h1 {
+  margin-bottom: 20px;
+  font-size: 28px;
+  margin-bottom: 15px;
+  color: midnightblue;
+}
+
+#contactForm {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+#contactForm input,
+#contactForm textarea {
+  display: block;
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+#contactForm button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  animation: buttonAnimation 2s infinite;
+}
+
+/* Add a CSS animation for the button */
+@keyframes buttonAnimation {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Hero Section Animation */
+@keyframes fadeInFromLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Add a CSS animation for the button */
+@keyframes buttonAnimation {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row {
+    flex-direction: column;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+}
